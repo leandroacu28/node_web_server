@@ -1,6 +1,6 @@
-const express = require('express');
+// const express = require('express');
+import express from 'express';
 const path = require('path'); //propio de node, para leer nuestras carpetas del proyecto
-
 
 const startServer = (options)=>{
     const {port,public_path='public'}=options;
