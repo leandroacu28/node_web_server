@@ -1,8 +1,10 @@
-// const express = require('express');
 import express from 'express';
-const path = require('path'); //propio de node, para leer nuestras carpetas del proyecto
+// const express = require('express');
 
-const startServer = (options)=>{
+import path from 'path';
+// const path = require('path'); //propio de node, para leer nuestras carpetas del proyecto
+
+export const startServer = (options)=>{
     const {port,public_path='public'}=options;
     console.log(port);
     console.log(public_path);
@@ -27,6 +29,3 @@ const startServer = (options)=>{
 
 }
 
-module.exports= {
-startServer
-}
